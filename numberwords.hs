@@ -16,7 +16,7 @@ toWords' n
   | n>=100 = (toWords' $ n `div` 100) ++ " hundred " ++ (toWords' $ n `mod` 100)
   | n>=20 = let units = (n `mod` 10) in (toTens (n - units)) ++ " " ++ (toWords' units)
   | n==19 = "nineteen"
-  | n==18 = "eightteen"
+  | n==18 = "eighteen"
   | n==17 = "seventeen"
   | n==16 = "sixteen"
   | n==15 = "fifteen"
@@ -41,7 +41,7 @@ toTens n
   | n==90 = "ninety"
   | n==80 = "eighty"
   | n==70 = "seventy"
-  | n==60 = "sisty"
+  | n==60 = "sixty"
   | n==50 = "fifty"
   | n==40 = "forty"
   | n==30 = "thirty"
